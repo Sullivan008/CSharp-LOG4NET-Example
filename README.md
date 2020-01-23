@@ -15,6 +15,12 @@ About the application technologies and operation:
    Update-Package -reinstall
    ```
  
+2. Configure log4net using the .config file in **AssemblyInfo.cs** file
+
+   ```C#
+   [assembly: log4net.Config.XmlConfigurator(Watch = true)]
+   ```
+ 
 ### About the application:
 
 The Apache log4net library is a tool to help the programmer output log statements to a variety of output targets.
